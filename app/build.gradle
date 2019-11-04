@@ -19,6 +19,22 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            ndk {
+                abiFilters "armeabi-v7a"
+            }
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file('keys/demo.jks')
+            storePassword "abc123!@#"//密钥文件密码
+            keyAlias "demo"//key别名
+            keyPassword "abc123!@#"//key密码
+        }
+        debug {
+            //SHA1: D8:D7:E2:58:1B:50:DE:57:1C:96:A7:7A:A6:B4:E6:03:46:84:1E:5E
+            //SHA256: 57:80:5B:5E:EE:6C:72:97:2F:E2:9C:47:B9:01:8D:E7:28:3D:B4:BD:94:D2:63:96:24:DF:44:E9:0B:99:AB:88
+            storeFile file('keys/debug.keystore')
         }
     }
 }
