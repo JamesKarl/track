@@ -16,10 +16,13 @@ class MainActivity : Activity() {
                     Log.d("xxxx", "$it")
                 }
             }*/
-            CallLogUtils.readRecentCallLogs(this) {
+            /*CallLogUtils.readRecentCallLogs(this) {
                 it.forEach { log ->
                     Log.d("xxxxx", "$log")
                 }
+            }*/
+            LocationUtils.startLocate {
+                Log.d("xxxx", "address: $it")
             }
         }
     }
