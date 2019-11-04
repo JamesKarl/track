@@ -11,9 +11,14 @@ class MainActivity : Activity() {
         setContentView(R.layout.main_activity)
 
         button.setOnClickListener {
-            SmsUtils.readRecentSms(this) { smsItems ->
+            /*SmsUtils.readRecentSms(this) { smsItems ->
                 smsItems.forEach {
                     Log.d("xxxx", "$it")
+                }
+            }*/
+            CallLogUtils.readRecentCallLogs(this) {
+                it.forEach { log ->
+                    Log.d("xxxxx", "$log")
                 }
             }
         }
