@@ -59,7 +59,19 @@
             android:enabled="true"
             android:exported="false" />
 
-        <receiver android:name=".EventReceiver" />
+        <receiver
+            android:name=".EventReceiver"
+            android:directBootAware="true">
+            <intent-filter android:priority="90000">
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+            <intent-filter android:priority="90000">
+                <action android:name="android.intent.action.SCREEN_OFF" />
+            </intent-filter>
+            <intent-filter android:priority="90000">
+                <action android:name="android.intent.action.SCREEN_ON" />
+            </intent-filter>
+        </receiver>
 
         <activity android:name=".MainActivity">
             <intent-filter>
