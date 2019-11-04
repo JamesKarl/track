@@ -1,0 +1,108 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.track"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_SMS" />
+11-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:5:5-67
+11-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:6:5-28:19
+14        android:allowBackup="true"
+14-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:7:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.1.0] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/eb2fc55943e1c4f10494fa8d2df01bac/core-1.1.0/AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:extractNativeLibs="false"
+18        android:icon="@mipmap/ic_launcher"
+18-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:8:9-43
+19        android:label="@string/app_name"
+19-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:9:9-41
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:10:9-54
+21        android:supportsRtl="true"
+21-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:11:9-35
+22        android:testOnly="true"
+23        android:theme="@style/AppTheme" >
+23-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:12:9-40
+24        <service
+24-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:14:9-17:40
+25            android:name="com.example.track.DataObserveService"
+25-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:15:13-47
+26            android:enabled="true"
+26-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:16:13-35
+27            android:exported="false" />
+27-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:17:13-37
+28
+29        <receiver android:name="com.example.track.EventReceiver" />
+29-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:19:9-51
+29-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:19:19-48
+30
+31        <activity android:name="com.example.track.MainActivity" >
+31-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:21:9-27:20
+31-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:21:19-47
+32            <intent-filter>
+32-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:22:13-26:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:23:17-69
+33-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:23:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:25:17-77
+35-->/home/jameskarl/workspace/android/track/app/src/main/AndroidManifest.xml:25:27-74
+36            </intent-filter>
+37        </activity>
+38        <activity
+38-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:10:9-15:75
+39            android:name="com.blankj.utilcode.util.PermissionUtils$PermissionActivity"
+39-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:11:13-87
+40            android:configChanges="orientation|keyboardHidden|screenSize"
+40-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:12:13-74
+41            android:multiprocess="true"
+41-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:13:13-40
+42            android:theme="@style/ActivityTranslucent"
+42-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:14:13-55
+43            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+43-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:15:13-72
+44
+45        <provider
+45-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:17:9-26:20
+46            android:name="com.blankj.utilcode.util.Utils$FileProvider4UtilCode"
+46-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:18:13-80
+47            android:authorities="com.example.track.utilcode.provider"
+47-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:19:13-69
+48            android:exported="false"
+48-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:20:13-37
+49            android:grantUriPermissions="true"
+49-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:21:13-47
+50            android:multiprocess="true" >
+50-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:22:13-40
+51            <meta-data
+51-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:23:13-25:68
+52                android:name="android.support.FILE_PROVIDER_PATHS"
+52-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:24:17-67
+53                android:resource="@xml/util_code_provider_paths" />
+53-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:25:17-65
+54        </provider>
+55
+56        <service android:name="com.blankj.utilcode.util.MessengerUtils$ServerService" >
+56-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:28:9-32:19
+56-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:28:18-86
+57            <intent-filter>
+57-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:29:13-31:29
+58                <action android:name="com.example.track.messenger" />
+58-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:30:17-69
+58-->[com.blankj:utilcodex:1.25.9] /home/jameskarl/.gradle/caches/transforms-2/files-2.1/e0f8f66c09a4be73661ae0879c192bc6/jetified-utilcodex-1.25.9/AndroidManifest.xml:30:25-66
+59            </intent-filter>
+60        </service>
+61    </application>
+62
+63</manifest>
