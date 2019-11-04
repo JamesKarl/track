@@ -26,6 +26,9 @@ android {
     }
     signingConfigs {
         release {
+            // MD5:  43:C3:01:EF:EB:A3:37:08:07:13:9B:94:A9:5A:5A:00
+            // SHA1: 36:37:A2:81:90:BD:30:F4:67:5B:D7:DE:64:E7:2F:7D:D3:97:DC:5C
+            // SHA256: CC:41:34:FF:14:1C:35:84:B6:8D:BC:D3:4F:D1:04:6F:6F:4A:45:00:7A:FF:8D:58:B4:7E:00:7B:2D:3F:2E:5B
             storeFile file('keys/demo.jks')
             storePassword "abc123!@#"//密钥文件密码
             keyAlias "demo"//key别名

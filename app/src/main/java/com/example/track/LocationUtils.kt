@@ -6,6 +6,7 @@ import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
 import android.graphics.Color
+import android.util.Log
 import com.amap.api.location.AMapLocation
 import com.amap.api.location.AMapLocationClient
 import com.amap.api.location.AMapLocationClientOption
@@ -111,6 +112,7 @@ object LocationUtils : AMapLocationListener {
 
     override fun onLocationChanged(location: AMapLocation?) {
         location?.let {
+            Log.d("xxxx", "address: $it")
             locationListener?.invoke(getLocationStr(it))
         }
     }
